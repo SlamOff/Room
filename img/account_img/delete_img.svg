@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d81616;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_961" data-name="Group 961" transform="translate(-1374 -1093)">
+    <g id="Group_960" data-name="Group 960" transform="translate(136 -44)">
+      <circle id="Эллипс_4" data-name="Эллипс 4" class="cls-1" cx="7.5" cy="7.5" r="7.5" transform="translate(1238 1137)"/>
+    </g>
+    <g id="Rectangle_104" data-name="Rectangle 104" class="cls-2" transform="translate(1378.707 1097) rotate(45)">
+      <rect class="cls-3" width="9" height="1"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="8"/>
+    </g>
+    <g id="Rectangle_105" data-name="Rectangle 105" class="cls-2" transform="translate(1378 1103.364) rotate(-45)">
+      <rect class="cls-3" width="9" height="1"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="8"/>
+    </g>
+  </g>
+</svg>

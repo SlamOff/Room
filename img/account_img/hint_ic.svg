@@ -1,0 +1,10 @@
+<svg id="Assets_16X16_i_info_black" data-name="Assets/16X16/i_info_black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #93999d;
+      }
+    </style>
+  </defs>
+  <path id="i_info_black" class="cls-1" d="M8,16a8,8,0,1,1,8-8A8.009,8.009,0,0,1,8,16ZM8,1a7,7,0,1,0,7,7A7.008,7.008,0,0,0,8,1Zm.5,12h-1V6h1v7Zm0-8.035h-1V3h1V4.963Z"/>
+</svg>

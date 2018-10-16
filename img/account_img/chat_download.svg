@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.521 16.521">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #24bbfe;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Group_769" data-name="Group 769" transform="translate(-1344.711 -525.763)">
+    <g id="Скачать" transform="translate(-59.289 -416.238)">
+      <circle id="Эллипс_4" data-name="Эллипс 4" class="cls-1" cx="8.261" cy="8.261" r="8.261" transform="translate(1404 942)"/>
+      <path id="Union_4" data-name="Union 4" class="cls-2" d="M4.8,4.334l-.41.006H0l4.8-.014-.006-.4V-.465L4.8,4.327l.549,0L4.8,4.334l0,.554Z" transform="translate(1411.956 945.829) rotate(45)"/>
+    </g>
+  </g>
+</svg>

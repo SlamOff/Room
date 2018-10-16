@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14.142">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #502c5a;
+      }
+    </style>
+  </defs>
+  <g id="ring" transform="translate(0 -74.982)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="1" cy="1" r="1" transform="translate(9 81.053)"/>
+    <g id="Group_174" data-name="Group 174" transform="translate(0 74.982)">
+      <path id="Path_33" data-name="Path 33" class="cls-1" d="M220.6,219.1a1.5,1.5,0,1,0-1.5,1.5A1.5,1.5,0,0,0,220.6,219.1Zm-2,0a.5.5,0,1,1,.5.5A.5.5,0,0,1,218.6,219.1Z" transform="translate(-209.1 -212.029)"/>
+      <path id="Path_34" data-name="Path 34" class="cls-1" d="M365.27,139.188a7,7,0,0,0,0-9.9l-.709.709a5.99,5.99,0,0,1,0,8.481Z" transform="translate(-350.32 -127.168)"/>
+      <path id="Path_35" data-name="Path 35" class="cls-1" d="M78.85,129.289a7,7,0,0,0,0,9.9l.709-.709a5.99,5.99,0,0,1,0-8.481Z" transform="translate(-73.8 -127.168)"/>
+      <path id="Path_36" data-name="Path 36" class="cls-1" d="M310.988,189.252a4,4,0,0,0,0-5.657l-.708.708a3,3,0,0,1,0,4.241Z" transform="translate(-298.16 -179.352)"/>
+      <path id="Path_37" data-name="Path 37" class="cls-1" d="M154.772,183.6a4,4,0,0,0,0,5.657l.708-.708a3,3,0,0,1,0-4.241Z" transform="translate(-147.6 -179.352)"/>
+      <path id="Path_38" data-name="Path 38" class="cls-1" d="M418.842,75.692a8.986,8.986,0,0,1,0,12.722l.71.71a10,10,0,0,0,0-14.142Z" transform="translate(-402.481 -74.982)"/>
+      <path id="Path_39" data-name="Path 39" class="cls-1" d="M0,82.053a9.969,9.969,0,0,0,2.929,7.071l.71-.71a8.986,8.986,0,0,1,0-12.722l-.71-.71A9.969,9.969,0,0,0,0,82.053Z" transform="translate(0 -74.982)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.206 19.206">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #502c5a;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Group_967" data-name="Group 967" transform="translate(1071.206 -1486) rotate(90)">
+    <circle id="Эллипс_4" data-name="Эллипс 4" class="cls-1" cx="9.603" cy="9.603" r="9.603" transform="translate(1486 1071.206) rotate(-90)"/>
+    <path id="Union_6" data-name="Union 6" class="cls-2" d="M5.984,5.974,5.1,5.989H0l5.984-.018L5.97,5.1V0l.017,5.971h.235l-.235,0v.248Z" transform="translate(1490.264 1061.801) rotate(-45)"/>
+  </g>
+</svg>

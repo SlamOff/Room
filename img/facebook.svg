@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3957af;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_655" data-name="Group 655" transform="translate(-1218 -301)">
+    <g id="Assets_32X32_i_facebook_color" data-name="Assets/32X32/i_facebook_color" transform="translate(1218 301)">
+      <g id="Group_652" data-name="Group 652">
+        <g id="Symbol_288_1" data-name="Symbol 288 – 1">
+          <g id="Group_653" data-name="Group 653">
+            <rect id="icon" class="cls-1" width="32" height="32" rx="2"/>
+          </g>
+        </g>
+      </g>
+      <path id="XMLID_835_" class="cls-2" d="M.289,9.739H2.256v8.252a.292.292,0,0,0,.289.295H5.879a.292.292,0,0,0,.289-.295V9.778h2.26a.291.291,0,0,0,.287-.261L9.06,6.479a.3.3,0,0,0-.071-.23.287.287,0,0,0-.216-.1h-2.6v-1.9c0-.574.3-.865.9-.865h1.7a.292.292,0,0,0,.289-.295V.3A.292.292,0,0,0,8.772,0H6.426c-.017,0-.053,0-.107,0a4.442,4.442,0,0,0-2.94,1.13A3.181,3.181,0,0,0,2.354,3.923V6.15H.289A.292.292,0,0,0,0,6.445v3A.292.292,0,0,0,.289,9.739Z" transform="translate(11.469 6.857)"/>
+    </g>
+  </g>
+</svg>

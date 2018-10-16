@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.48 24.758">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #502c5a;
+      }
+    </style>
+  </defs>
+  <path id="arrow_left" data-name="arrow left" class="cls-1" d="M1111.754,516.091l11.4-11.218-11.4-11.218,1.18-1.162,12.3,12.1-.286.281.286.281-12.3,12.1Z" transform="translate(-1111.754 -492.493)"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg id="Гостиная" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60.003">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #505961;
+      }
+    </style>
+  </defs>
+  <g id="Group_21" data-name="Group 21" transform="translate(0 28.004)">
+    <g id="Group_20" data-name="Group 20" transform="translate(0 0)">
+      <path id="Path_20" data-name="Path 20" class="cls-1" d="M41.031,236.045h-3v-11a1,1,0,0,0-1-1h-32a1,1,0,0,0-1,1v11h-3a1,1,0,0,0-1,1v16a1,1,0,0,0,1,1h3v2h2v-2h30v2h2v-2h3a1,1,0,0,0,1-1v-16a1,1,0,0,0-1-1Zm-31,16h-8v-14h8Zm20,0h-18v-8h18Zm0-15v5h-18v-5a1,1,0,0,0-1-1h-5v-10h30v10h-5a1,1,0,0,0-1,1Zm10,15h-8v-14h8Z" transform="translate(-0.034 -224.046)"/>
+    </g>
+  </g>
+  <g id="Group_23" data-name="Group 23" transform="translate(39.991 0.004)">
+    <g id="Group_22" data-name="Group 22" transform="translate(0 0)">
+      <path id="Path_21" data-name="Path 21" class="cls-1" d="M339.973,18.936l-2-18a1,1,0,0,0-.99-.891h-14a1,1,0,0,0-1,.891l-2,18a.984.984,0,0,0,1,1.11h8v34h-4a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h10a1,1,0,0,0,1-1v-4a1,1,0,0,0-1-1h-4v-34h8a.983.983,0,0,0,.99-1.11Zm-5.99,37.11v2h-8v-2Zm-11.879-38,1.779-16h12.2l1.779,16Z" transform="translate(-319.975 -0.046)"/>
+    </g>
+  </g>
+  <g id="Group_25" data-name="Group 25" transform="translate(6.999 0)">
+    <g id="Group_24" data-name="Group 24">
+      <path id="Path_22" data-name="Path 22" class="cls-1" d="M83.035,6h-6.59L70.745.294a1,1,0,0,0-1.414,0h0L63.624,6h-6.59a1,1,0,0,0-1,1V23a1,1,0,0,0,1,1h26a1,1,0,0,0,1-1V7a1,1,0,0,0-1-1Zm-13-3.585L73.624,6H66.444ZM82.032,22h-24v-14h24Z" transform="translate(-56.034 -0.001)"/>
+    </g>
+  </g>
+  <g id="Group_27" data-name="Group 27" transform="translate(11 10.003)">
+    <g id="Group_26" data-name="Group 26">
+      <path id="Path_23" data-name="Path 23" class="cls-1" d="M88.034,80.046v10h20v-10Zm18,8h-16v-6h16Z" transform="translate(-88.034 -80.046)"/>
+    </g>
+  </g>
+</svg>

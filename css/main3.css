@@ -191,7 +191,7 @@
         max-width: 290px;
         width: 100%;
         margin: 0 auto;
-        background: #fff;
+        background: rgba(255,255,255,.9);
         padding: 20px 0;
         text-align: center;
         -webkit-border-radius: 15px;
@@ -358,8 +358,93 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px; }
-    .account_wr .start_project .start_form {
+    .account_wr .start_project .start_form.start_form_begin {
       display: none;
+    }
+    .form_block.room_param .block {
+      width: 33%;
+      padding-right: 10px;
+    }
+    .account_wr .start_project .start_form .form_block.room_param .block label {
+      font-size: 14px;
+    }
+    .floor {
+      text-align: left;
+      padding: 0 5px;
+      border: 1px solid #93999D;
+      font: 14px "Panton-Regular";
+      color: #262038;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+
+    }
+    .floor:after {
+      content: "";
+      position: absolute;
+      right: 5px;
+      width: 12px;
+      height: 10px;
+      top: 10px;
+      background-image: url(../img/arrow.svg);
+      -ms-background-size: 60%;
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+    .floor input {
+      border: 0!important;
+      width: 100%!important;
+      height: 100%!important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      text-align: left!important;
+    }
+    .floor ul {
+      display: none;
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      border: 1px solid #93999D;
+      background-color: #fff;
+      width: -webkit-calc(100% + 2px);
+      width: -moz-calc(100% + 2px);
+      width: -ms-calc(100% + 2px);
+      width: calc(100% + 2px);
+      border-radius: 5px;
+    }
+    .floor ul li {
+      height: 30px;
+      padding: 4px 0;
+      text-indent: 5px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .floor.opened {
+      border-bottom: 0;
+      border-radius: 5px 5px 0 0;
+    }
+    .floor.opened ul {
+      display: block;
+      
+    }
+    .floor.opened:after {
+      -webkit-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      transform: rotate(270deg);
+    }
+    .floor ul li.chosen {
+      
     }
     .account_wr .start_project_result .project_img {
       /*display: none;*/
@@ -426,7 +511,33 @@
       .account_wr .start_project .start_form .top_param .radio_wr {
         display: flex;
         align-items: center;
-        margin-top: 10px; }
+        margin-top: 10px;
+        position: relative;
+        cursor: pointer;
+      }
+      .account_wr .start_project .start_form .top_param .radio_wr label {
+        cursor: pointer;
+      }
+        .account_wr .start_project .start_form .top_param .radio_wr input {
+          opacity: 0;
+        }
+        .account_wr .start_project .start_form .top_param .radio_wr .checked {
+          width: 15px;
+          height: 15px;
+          border: 1px solid rgb(80, 44, 90);
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        .account_wr .start_project .start_form .top_param .radio_wr .checked .checked_true {
+          position: absolute;
+          display: none;
+          width: 9px;
+          height: 9px;
+          top: 2px;
+          left: 2px;
+          background-color: rgb(80, 44, 90);
+        }
     .account_wr .start_project .start_form .bottom_param {
       margin-top: 25px; }
       .account_wr .start_project .start_form .bottom_param .size_wr {
@@ -464,7 +575,8 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px; }
     .account_wr .start_project_result .start_form label {
-      color: #505961; }
+      color: #505961;
+      margin: 0; }
     .account_wr .start_project_result .start_form .result {
       color: #502C5A;
       font: 14px "Panton-SemiBold";
@@ -719,6 +831,9 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     margin-top: 20px; }
+    .account_wr .sketch_temp img {
+      max-width: 100%;
+    }
     .account_wr .sketch_temp .block_heading {
       padding: 16px 2.5%; }
     .account_wr .sketch_temp .sketch_top {

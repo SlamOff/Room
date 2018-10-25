@@ -9,6 +9,18 @@ $(document).ready(function() {
         $(this).find('img').attr("src","img/account_img/"+name+"_active.svg");
     });
 
+    /// floor select
+    $('.floor').click(function(){
+    	$(this).toggleClass('opened');
+    });
+    $('.floor ul li').click(function(){
+    	$('.floor ul li').removeClass('chosen');
+    	$(this).addClass('chosen');
+    	var text = $(this).text();
+    	$('.floor input').val(text);
+    });
+    /////////////////
+
     $('.account_wr .account_sidebar ul li:not(.active)').mouseout(function () {
         var href = $(this).find('img').attr("src");
         var newHref = href.split('/');
@@ -55,11 +67,41 @@ $(document).ready(function() {
     // radio change color
 
 
-    $('.radio_wr input').on('click',function () {
-        $(this).closest('.block').find('label').removeAttr('style');
-        $(this).closest('.radio_wr').find('label').css('color', '#502C5A');
-    });
-
+    // $('.radio_wr-1 input').on('click',function () {
+    //     $(this).closest('.block').find('label').removeAttr('style');
+    //     $(this).closest('.radio_wr-1').find('label').css('color', '#502C5A');
+    //     console.log(this.checked);
+    //     $('.radio_wr-1 input').siblings('.checked').find('.checked_true').hide();
+    //     if(this.checked){
+    //     	$(this).siblings('.checked').find('.checked_true').toggle();
+    //     }
+    // });
+    function checkbox(n){
+    	$('.radio_' + n + ' ' + '.radio_wr input').click(function(){
+	    	var inputs = $('.radio_' + n + ' ' + '.radio_wr input').get();
+	    	for(var i = 0; i < inputs.length; i++){
+	    		inputs[i].previousElementSibling.children[0].style.display = 'none';
+	    		if(inputs[i].checked){
+	    			inputs[i].previousElementSibling.children[0].style.display = 'block';
+	    		}
+	    	}
+	    });
+    }
+    checkbox(1);
+    checkbox(2);
+    // function checkbox(s){
+    // 	$(s + ' ' + 'input').on('click',function () {
+	   //      $(this).closest('.block').find('label').removeAttr('style');
+	   //      $(this).closest(s).find('label').css('color', '#502C5A');
+	   //      console.log(this.checked);
+	   //      $(s + ' ' + 'input').siblings('.checked').find('.checked_true').hide();
+	   //      if(this.checked){
+	   //      	$(this).siblings('.checked').find('.checked_true').toggle();
+	   //      }
+	   //  });
+    // }
+    // checkbox('.radio_wr-1');
+    // checkbox('.radio_wr-2');
     // delete img under chat and in project
 
     $('.account_wr .photo_room_wr .img_block .delete_img').on('click', function () {
@@ -162,6 +204,45 @@ $(document).ready(function() {
            $('.account_wr .ordering .form_wr .courier_block').slideUp();
            $('.account_wr .ordering .form_wr .pickup').slideDown();
        }
+    });
+    $('.slider-for_account').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav_account'
+    });
+    $('.slider-nav_account').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for_account',
+        dots: false,
+       	//infinite: false,
+        focusOnSelect: true,
+        //centerMode: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
     ////////////////////////////////////////////////////////////////////////
 

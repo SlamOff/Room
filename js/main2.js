@@ -19,6 +19,21 @@ $(document).ready(function() {
     	var text = $(this).text();
     	$('.floor input').val(text);
     });
+
+    function openedSelect(sel){
+    	$(sel).click(function(){
+	    	$(this).toggleClass('opened');
+	    });
+	    $(sel + ' ul li').click(function(){
+	    	$(sel + ' ul li').removeClass('chosen');
+	    	$(this).addClass('chosen');
+	    	var text = $(this).text();
+	    	$(sel + ' input').val(text);
+	    });
+    }
+    openedSelect('.my_select-1');
+    openedSelect('.my_select-2');
+    openedSelect('.my_select-3');
     /////////////////
 
     $('.account_wr .account_sidebar ul li:not(.active)').mouseout(function () {
@@ -76,9 +91,9 @@ $(document).ready(function() {
     //     	$(this).siblings('.checked').find('.checked_true').toggle();
     //     }
     // });
-    function checkbox(n){
-    	$('.radio_' + n + ' ' + '.radio_wr input').click(function(){
-	    	var inputs = $('.radio_' + n + ' ' + '.radio_wr input').get();
+    function checkbox(str){
+    	$(str).click(function(){
+	    	var inputs = $(str).get();
 	    	for(var i = 0; i < inputs.length; i++){
 	    		inputs[i].previousElementSibling.children[0].style.display = 'none';
 	    		if(inputs[i].checked){
@@ -87,21 +102,12 @@ $(document).ready(function() {
 	    	}
 	    });
     }
-    checkbox(1);
-    checkbox(2);
-    // function checkbox(s){
-    // 	$(s + ' ' + 'input').on('click',function () {
-	   //      $(this).closest('.block').find('label').removeAttr('style');
-	   //      $(this).closest(s).find('label').css('color', '#502C5A');
-	   //      console.log(this.checked);
-	   //      $(s + ' ' + 'input').siblings('.checked').find('.checked_true').hide();
-	   //      if(this.checked){
-	   //      	$(this).siblings('.checked').find('.checked_true').toggle();
-	   //      }
-	   //  });
-    // }
-    // checkbox('.radio_wr-1');
-    // checkbox('.radio_wr-2');
+    checkbox('.radio_1 .radio_wr input');
+    checkbox('.radio_2 .radio_wr input');
+    checkbox('.checkbox_wr input');
+    checkbox('.agree_and_btn input');
+
+    
     // delete img under chat and in project
 
     $('.account_wr .photo_room_wr .img_block .delete_img').on('click', function () {
@@ -193,18 +199,26 @@ $(document).ready(function() {
         $(this).closest('.block_wr').find('.info').slideToggle();
         return false;
     });
+    function selectBox(sel){
+    	$(sel).on('click', function () {
+	       var value = $(this).find('input').val();
+	       if(value == 'Самовывоз в Киеве'){
+	           $('.account_wr .ordering .form_wr .pickup').slideUp();
+	           $('.account_wr .ordering .form_wr .courier_block').slideDown();
+	       }
+	       else if(value == 'Доставка курьером'){
+	           $('.account_wr .ordering .form_wr .courier_block').slideUp();
+	           $('.account_wr .ordering .form_wr .pickup').slideDown();
+	       }
+	       else if(value == '') {
+	       		$('.account_wr .ordering .form_wr .courier_block').slideUp();
+	           $('.account_wr .ordering .form_wr .pickup').slideUp();
+	       }
+	    });
+    }
+    selectBox('.my_select-1');
+    //selectBox('.my_select-2');
 
-    $('#type_del').on('change', function () {
-       var value = $(this).val();
-       if(value==1){
-           $('.account_wr .ordering .form_wr .pickup').slideUp();
-           $('.account_wr .ordering .form_wr .courier_block').slideDown();
-       }
-       else{
-           $('.account_wr .ordering .form_wr .courier_block').slideUp();
-           $('.account_wr .ordering .form_wr .pickup').slideDown();
-       }
-    });
     $('.slider-for_account').slick({
         slidesToShow: 1,
         slidesToScroll: 1,

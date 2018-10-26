@@ -36,7 +36,13 @@
   background: linear-gradient(to right, #E1CBCB, #EFDDDD); }
 
 .breadcrumb_account {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
@@ -97,7 +103,7 @@
     position: fixed;
     top: auto;
     bottom: auto;
-    z-index: 10;
+    z-index: 100;
     background-color: #fff;
   }
   .account_wr .account_sidebar.scrolled {
@@ -120,7 +126,10 @@
       .account_wr .account_sidebar ul li a {
         font: 16px "Panton-Regular";
         color: #292929;
-        display: flex;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
         align-items: center;
         -webkit-transition: all 0.2s linear;
         -moz-transition: all 0.2s linear;
@@ -160,8 +169,14 @@
     .account_wr .account_sidebar .main_btn:hover {
       background: #efdddd; }
   .account_wr .account_container .account_two_col {
-    display: flex;
-    justify-content: space-between;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 20px; }
     .account_wr .account_container .account_two_col .account_left {
       flex-basis: 63%;
@@ -209,8 +224,14 @@
         border-top: 1px solid #EEEFEF;
         border-bottom: 1px solid #EEEFEF; }
         .account_wr .project_view .project_info .param .item {
-          display: flex;
-          justify-content: space-between;
+          display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+          -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
           align-items: center;
           margin-bottom: 10px; }
           .account_wr .project_view .project_info .param .item:last-child {
@@ -263,8 +284,14 @@
       width: 55px; }
   .account_wr .main_top {
     padding: 14.5px 2.5%;
-    display: flex;
-    justify-content: space-between;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
     -webkit-border-radius: 5px;
@@ -281,8 +308,14 @@
       color: #93999D; }
   .account_wr .block_heading {
     padding: 16px 3.5%;
-    display: flex;
-    justify-content: space-between;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     align-items: center;
     position: relative;
     border-bottom: 1px solid #EFDDDD; }
@@ -292,7 +325,10 @@
     .account_wr .block_heading .block_term {
       font: 16px "Panton-SemiBold";
       color: #502C5A;
-      display: flex;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
       align-items: center; }
       .account_wr .block_heading .block_term span {
         color: #262038;
@@ -493,14 +529,26 @@
       background: #502C5A;
       margin: 0 10px; }
     .account_wr .start_project .start_form .budget {
-      display: flex;
-      justify-content: space-between;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
       align-items: center; }
     .account_wr .start_project .start_form .number_range {
       max-width: 128px; }
     .account_wr .start_project .start_form .top_param {
-      display: flex;
-      justify-content: space-between;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
       align-items: center; }
       .account_wr .start_project .start_form .top_param label {
         font-family: "Panton-Regular";
@@ -509,7 +557,10 @@
       .account_wr .start_project .start_form .top_param input {
         height: auto; }
       .account_wr .start_project .start_form .top_param .radio_wr {
-        display: flex;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
         align-items: center;
         margin-top: 10px;
         position: relative;
@@ -541,9 +592,15 @@
     .account_wr .start_project .start_form .bottom_param {
       margin-top: 25px; }
       .account_wr .start_project .start_form .bottom_param .size_wr {
-        display: flex;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
         align-items: center;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         margin-top: 15px; }
         .account_wr .start_project .start_form .bottom_param .size_wr p {
           font-size: 14px;
@@ -553,8 +610,14 @@
           text-align: left;
           padding: 0 5px; }
     .account_wr .start_project .start_form .label_with_link {
-      display: flex;
-      justify-content: space-between;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
       align-items: center; }
       .account_wr .start_project .start_form .label_with_link a {
         color: #B0B4B8;
@@ -585,8 +648,14 @@
     .account_wr .start_project_result .start_form .budget {
       justify-content: flex-start; }
       .account_wr .start_project_result .start_form .budget .price_range {
-        display: flex;
-        justify-content: space-between;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         align-items: center;
         margin-left: 7px; }
         .account_wr .start_project_result .start_form .budget .price_range span {
@@ -648,8 +717,14 @@
       -o-transform: rotate(0deg);
       transform: rotate(0deg); }
   .account_wr .photo_room_wr {
-    display: flex;
-    flex-wrap: wrap; }
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
     .account_wr .photo_room_wr .img_block {
       position: relative;
       margin-top: 15px;
@@ -681,8 +756,14 @@
     .account_wr .result_test .test_info {
       padding: 25px 3.5% 5px;
       border-bottom: 1px solid #EFDDDD;
-      display: flex;
-      flex-wrap: wrap; }
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
       .account_wr .result_test .test_info .block {
         flex-basis: 50%;
         margin-bottom: 20px; }
@@ -707,8 +788,14 @@
           font-size: 16px;
           padding-left: 7px; }
       .account_wr .result_test .picture_block .img_wr {
-        display: flex;
-        justify-content: space-between;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         align-items: center; }
   .account_wr .designer_chat {
     -webkit-border-radius: 10px;
@@ -719,8 +806,14 @@
     box-shadow: 0px 0px 17px 2px #ececeb; }
     .account_wr .designer_chat .chat_top {
       padding: 16px 5%;
-      display: flex;
-      justify-content: space-between;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       -webkit-box-shadow: 0px 0px 17px 2px #ececeb;
@@ -768,7 +861,10 @@
           cursor: pointer; }
       .account_wr .designer_chat .chat .message_info {
         font: 12px "Panton-Regular";
-        display: flex;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
         align-items: center;
         margin-bottom: 10px; }
         .account_wr .designer_chat .chat .message_info .date {
@@ -837,8 +933,14 @@
     .account_wr .sketch_temp .block_heading {
       padding: 16px 2.5%; }
     .account_wr .sketch_temp .sketch_top {
-      display: flex;
-      justify-content: space-between;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
       padding: 16px 2.5%; }
       .account_wr .sketch_temp .sketch_top .name {
         font: 18px "Panton-Bold";
@@ -935,9 +1037,18 @@
         color: #262038;
         font: 18px "Panton-Bold"; }
       .account_wr .sketch_temp .sketch_special_block .special_wr {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         margin-top: 20px; }
       .account_wr .sketch_temp .sketch_special_block .block {
         flex-basis: 20%;
@@ -952,8 +1063,14 @@
     .account_wr .sketch_temp .interior_features {
       padding: 20px 2.5% 45px; }
       .account_wr .sketch_temp .interior_features .title_flex {
-        display: flex;
-        justify-content: space-between;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         align-items: center; }
         .account_wr .sketch_temp .interior_features .title_flex .price_right {
           color: #505961;
@@ -964,9 +1081,18 @@
         font: 16px "Panton-Bold";
         color: #505961; }
       .account_wr .sketch_temp .interior_features .item_wr {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; }
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
         .account_wr .sketch_temp .interior_features .item_wr .item {
           border: 2px solid #EEEFEF;
           flex-basis: 31.5%;
@@ -991,7 +1117,13 @@
             font: 14px "Panton-Regular";
             color: #353535; }
           .account_wr .sketch_temp .interior_features .item_wr .item_info .price {
-            display: flex;
+            display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+            -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
             justify-content: space-between;
             margin-top: 20px; }
             .account_wr .sketch_temp .interior_features .item_wr .item_info .price p {
@@ -1052,9 +1184,18 @@
       background: #5AA800;
       color: #fff; }
     .account_wr .model .model_info {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+      -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
       padding: 20px 3%; }
       .account_wr .model .model_info .left .name {
         font: 18px "Panton-Bold";
@@ -1064,7 +1205,10 @@
         font: 18px "Panton-Bold";
         color: #505961; }
       .account_wr .model .model_info .right {
-        display: flex;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
         align-items: center; }
         .account_wr .model .model_info .right .main_btn {
           width: 190px;
@@ -1175,8 +1319,14 @@
         font: 14px "Panton-Regular";
         font-style: italic; }
     .account_wr .designer_review .do_rating {
-      display: flex;
-      flex-wrap: wrap;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
       justify-content: center;
       margin-top: 25px; }
       .account_wr .designer_review .do_rating span {
@@ -1217,8 +1367,14 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 21px 2.5%; }
     .account_wr .purchase_page_view .top_info .block {
       color: #93999D;
@@ -1228,13 +1384,25 @@
         font: 16px "Panton-Bold";
         padding-left: 7px; }
   .account_wr .purchase_page_view .three_in_line {
-    display: flex;
-    justify-content: space-between; }
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .account_wr .purchase_page_view .three_in_line .info {
       flex-basis: 33.3%; }
   .account_wr .purchase_page_view .two_in_line {
-    display: flex;
-    justify-content: space-between; }
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .account_wr .purchase_page_view .two_in_line .info:first-child {
       flex-basis: 66.6%; }
     .account_wr .purchase_page_view .two_in_line .info:last-child {
@@ -1257,9 +1425,9 @@
     .account_wr .purchase_page_view .purch_info .info .descr span {
       font: 12px "Panton-Regular";
       color: #505961;
-      width: 65px;
+      /*width: 65px;*/
       margin-right: 10px;
-      text-align: right;
+      /*text-align: right;*/
       display: inline-block;
       vertical-align: middle; }
     .account_wr .purchase_page_view .purch_info .info .descr .special {
@@ -1271,8 +1439,14 @@
       height: 84px;
       overflow: hidden; }
     .account_wr .purchase_page_view .purch_info .info .param_inline {
-      display: flex;
-      justify-content: space-between; }
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .account_wr .purchase_page_view .common_table {
     overflow: hidden;
     overflow-x: auto;
@@ -1284,7 +1458,7 @@
     -moz-border-radius: 10px;
     border-radius: 10px; }
   .account_wr .purchase_page_view table {
-    min-width: 870px;
+    /*min-width: 870px;*/
     margin-top: 20px; }
     .account_wr .purchase_page_view table thead {
       border-bottom: 1px solid #93999D; }
@@ -1391,8 +1565,14 @@
           border-radius: 50%; }
       .account_wr .scroll_block .block .top {
         margin-bottom: 20px;
-        display: flex;
-        justify-content: space-between;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         align-items: center; }
         .account_wr .scroll_block .block .top .date {
           color: #262038;
@@ -1449,8 +1629,14 @@
         opacity: 1;
         color: #5AA800; }
     .account_wr .scroll_block .purch_item ul, .account_wr .scroll_block .purch_head ul {
-      display: flex;
-      justify-content: space-between; }
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
       .account_wr .scroll_block .purch_item ul li, .account_wr .scroll_block .purch_head ul li {
         flex-basis: 20%;
         text-align: center; }
@@ -1484,9 +1670,18 @@
         font: 21px "Panton-Bold"; }
       .account_wr .payment_wr .payment_block .line {
         margin-top: 15px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap; }
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
       .account_wr .payment_wr .payment_block .center {
         border-top: 2px solid #EEEFEF;
         border-bottom: 2px solid #EEEFEF;
@@ -1521,6 +1716,23 @@
     -moz-box-shadow: 0px 0px 17px 2px #ececeb;
     box-shadow: 0px 0px 17px 2px #ececeb;
     padding-bottom: 30px; }
+    .account_wr .account_settings .checked {
+          width: 15px;
+          height: 15px;
+          border: 1px solid rgb(80, 44, 90);
+          position: absolute;
+          left: 0;
+          top: 5px;
+        }
+        .account_wr .account_settings .checked .checked_true {
+          position: absolute;
+          display: none;
+          width: 9px;
+          height: 9px;
+          top: 2px;
+          left: 2px;
+          background-color: rgb(80, 44, 90);
+        }
     .account_wr .account_settings .setting_block {
       border-bottom: 1px solid #EFDDDD;
       padding: 35px 4.5% 30px; }
@@ -1528,9 +1740,18 @@
         color: #502C5A;
         font: 16px "Panton-Bold"; }
       .account_wr .account_settings .setting_block .input_wr {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; }
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
         .account_wr .account_settings .setting_block .input_wr .input_block {
           flex-basis: 46%;
           margin-top: 20px; }
@@ -1555,19 +1776,40 @@
         flex-basis: 31%; }
       .account_wr .account_settings .setting_block .inline_check_and_link {
         margin-top: 10px;
-        display: flex;
-        align-items: center; }
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        align-items: center; 
+        -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;}
       .account_wr .account_settings .setting_block .checkbox_wr {
-        display: flex;
+        position: relative;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
         align-items: center;
         margin-right: 10%; }
+        .account_wr .account_settings .setting_block .checkbox_wr input {
+          opacity: 0;
+        }
         .account_wr .account_settings .setting_block .checkbox_wr label {
           padding-left: 15px;
-          cursor: pointer; }
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
       .account_wr .account_settings .setting_block .rules {
         color: #502C5A;
         font: 14px "Panton-Regular";
         text-decoration: underline; }
+        .account_wr .account_settings .setting_block .rules:hover {
+          text-decoration: underline!important;
+        }
     .account_wr .account_settings .border_none {
       border-bottom: none; }
     .account_wr .account_settings .btn_center {
@@ -1584,8 +1826,14 @@
       padding: 10px 2.5%;
       border-bottom: 1px solid #EFDDDD; }
       .account_wr .account_help .top form {
-        display: flex;
-        justify-content: space-between;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         align-items: center; }
       .account_wr .account_help .top label {
         font: 18px "Panton-SemiBold";
@@ -1612,8 +1860,14 @@
     .account_wr .account_help .top_search {
       padding: 15px 2.5%;
       border-bottom: 1px solid #EFDDDD;
-      display: flex;
-      justify-content: space-between;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
       align-items: center; }
       .account_wr .account_help .top_search .help_title {
         padding: 0; }
@@ -1644,7 +1898,10 @@
               background: #252138;
               color: #fff; }
     .account_wr .account_help ul li {
-      display: flex;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
       align-items: center;
       border-bottom: 1px solid #EFDDDD;
       padding: 17px 2.5%; }
@@ -1694,9 +1951,18 @@
           font: 18px "Panton-Bold";
           padding-bottom: 15px; }
       .account_wr .forming_an_order .how_it_works .advantages {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap; }
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
         .account_wr .forming_an_order .how_it_works .advantages .block {
           flex-basis: 23%;
           text-align: center; }
@@ -1786,8 +2052,14 @@
         min-height: 52px;
         padding: 10px 0; }
         .account_wr .forming_an_order .catalog .fixed_top .flex_show {
-          display: flex;
-          justify-content: space-between;
+          display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+          -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
           align-items: center;
           padding: 0 2.5%;
           width: 100%; }
@@ -1887,8 +2159,14 @@
           .account_wr .forming_an_order .catalog table tbody .price .old_price span {
             font-size: 12px; }
   .account_wr .result_order {
-    display: flex;
-    justify-content: space-between;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     align-items: center;
     background: #FAF4F4;
     height: 90px;
@@ -1914,10 +2192,73 @@
     -moz-box-shadow: 0px 0px 17px 2px #ececeb;
     box-shadow: 0px 0px 17px 2px #ececeb;
     margin-top: 30px; }
+    textarea, select {
+      outline: 0;
+    }
+    .my_select {
+      position: relative;
+      height: 34px;
+          border: 1px solid #93999D;
+    font: 14px "Panton-Regular";
+    color: #262038;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .my_select.opened {
+      border-bottom: 0;
+      border-radius: 5px 5px 0 0;
+    }
+    .my_select.opened ul {
+      display: block;
+    }
+    .my_select ul li {
+      height: 30px;
+    padding: 4px 0;
+    text-indent: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    .my_select input {
+      border: 0!important;
+      width: 100%!important;
+      height: 100%!important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      text-align: left!important;
+    }
+    .my_select ul {
+      display: none;
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      border: 1px solid #93999D;
+      background-color: #fff;
+      width: -webkit-calc(100% + 2px);
+      width: -moz-calc(100% + 2px);
+      width: -ms-calc(100% + 2px);
+      width: calc(100% + 2px);
+    border-radius: 5px;
+    }
     .account_wr .ordering .form_wr {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 0% 30px; }
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+      padding: 20px 0% 30px;
+      /*-webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;*/ }
       .account_wr .ordering .form_wr .block_wr {
         border-bottom: 1px solid #EFDDDD;
         padding: 15px 5%; }
@@ -1926,9 +2267,18 @@
       .account_wr .ordering .form_wr .title_info {
         color: #502C5A;
         font: 18px "Panton-Bold";
-        display: flex;
-        justify-content: space-between;
-        align-items: center; }
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
         .account_wr .ordering .form_wr .title_info .edit {
           color: #505961;
           font: 12px "Panton-SemiBold";
@@ -2041,12 +2391,23 @@
         color: #262038;
         font: 14px 'Panton-Italic'; }
       .account_wr .ordering .form_wr .courier_block {
+        margin-top: 10px;
         display: none; }
         .account_wr .ordering .form_wr .courier_block .inline {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap; }
-          .account_wr .ordering .form_wr .courier_block .inline input, .account_wr .ordering .form_wr .courier_block .inline .jq-selectbox {
+          display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+          -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+          -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
+          .account_wr .ordering .form_wr .courier_block .inline input, .account_wr .ordering .form_wr .courier_block .inline .jq-selectbox,
+          .account_wr .ordering .form_wr .courier_block .inline .my_select {
             flex-basis: 47%; }
           .account_wr .ordering .form_wr .courier_block .inline .jq-selectbox .placeholder {
             color: #505961; }
@@ -2056,11 +2417,18 @@
         font: 12px "Panton-SemiBold";
         padding: 10px; }
       .account_wr .ordering .form_wr .checkbox_wr {
-        display: flex;
-        justify-content: space-between;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         align-items: center;
         margin-bottom: 10px; }
         .account_wr .ordering .form_wr .checkbox_wr label {
+          padding-left: 30px;
           font: 14px "Panton-Regular";
           color: #502C5A; }
         .account_wr .ordering .form_wr .checkbox_wr .dop_price {
@@ -2122,6 +2490,7 @@
       .account_wr .ordering .form_wr .agree_and_btn .checkbox {
         margin-bottom: 10px; }
         .account_wr .ordering .form_wr .agree_and_btn .checkbox label {
+          padding-left: 30px;
           font: 14px "Panton-Regular";
           color: #502C5A;
           cursor: pointer; }
@@ -2147,8 +2516,14 @@
         color: #262038;
         padding: 15px 0; }
     .account_wr .thx_order .links {
-      display: flex;
-      justify-content: space-between;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
       align-items: center;
       margin-top: 15px; }
       .account_wr .thx_order .links a {
@@ -2156,7 +2531,30 @@
         font: 14px "Panton-Bold"; }
         .account_wr .thx_order .links a:hover {
           text-decoration: underline; }
-
+.ordering input[type="checkbox"]{
+  position: absolute;
+  opacity: 0;
+}
+.ordering .checkbox {
+  position: relative;
+}
+.ordering .checked {
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgb(80, 44, 90);
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.ordering .checked .checked_true {
+  position: absolute;
+  display: none;
+  width: 9px;
+  height: 9px;
+  top: 2px;
+  left: 2px;
+  background-color: rgb(80, 44, 90);
+}
 .popup {
   display: none;
   z-index: 8000;
@@ -2224,8 +2622,14 @@
         color: #262038;
         font: 14px 'Panton-Italic'; }
       .popup .wr .popup_content .do_rating {
-        display: flex;
-        flex-wrap: wrap;
+        display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+        -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
         justify-content: center;
         margin-top: 25px; }
         .popup .wr .popup_content .do_rating span {
@@ -2292,7 +2696,10 @@
   .account_wr .account_sidebar ul {
     padding: 30px 5%; }
   .account_wr .account_container .account_two_col {
-    flex-wrap: wrap; }
+    -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
     .account_wr .account_container .account_two_col .account_right, .account_wr .account_container .account_two_col .account_left {
       flex-basis: 100%; }
     .account_wr .account_container .account_two_col .account_left {
@@ -2329,13 +2736,19 @@
     .account_wr .fixed_top .selected_prod span, .account_wr .fixed_top .delivery_term span, .account_wr .fixed_top .price span {
       display: block; }
   .account_wr .ordering .form_wr {
-    flex-wrap: wrap; }
+    -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
     .account_wr .ordering .form_wr .left, .account_wr .ordering .form_wr .right {
       flex-basis: 100%; }
     .account_wr .ordering .form_wr .right {
       margin: 30px 2.5% 0; }
   .account_wr .purchase_page_view .three_in_line, .account_wr .purchase_page_view .two_in_line {
-    flex-wrap: wrap; }
+    -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .account_wr .purchase_page_view .purch_info .info {
     margin-right: 0;
     flex-basis: 100%;
@@ -2396,7 +2809,10 @@
   .account_wr .result_order {
     height: auto;
     padding: 10px 2.5%;
-    flex-wrap: wrap; }
+    -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
     .account_wr .result_order .result_p, .account_wr .result_order .selected_prod, .account_wr .result_order .delivery_term, .account_wr .result_order .price {
       flex-basis: 50%; }
   .account_wr .thx_order {
@@ -2441,7 +2857,10 @@
         display: block;
         width: 100%; }
   .account_wr .start_project .start_form .bottom_param .size_wr {
-    flex-wrap: wrap; }
+    -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
     .account_wr .start_project .start_form .bottom_param .size_wr .size_block {
       flex-basis: 50%;
       margin-bottom: 15px; }
@@ -2507,7 +2926,10 @@
     margin-right: 0;
     padding-bottom: 15px; }
   .account_wr .forming_an_order .catalog .fixed_top .flex_show {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
     justify-content: flex-start; }
     .account_wr .forming_an_order .catalog .fixed_top .flex_show .select_all, .account_wr .forming_an_order .catalog .fixed_top .flex_show .selected_prod, .account_wr .forming_an_order .catalog .fixed_top .flex_show .delivery_term, .account_wr .forming_an_order .catalog .fixed_top .flex_show .price, .account_wr .forming_an_order .catalog .fixed_top .flex_show .main_btn {
       margin-bottom: 10px;
@@ -2569,10 +2991,19 @@
   .account_wr .block_heading .hint_block {
     width: 280px; }
   .account_wr .model .model_info {
-    flex-wrap: wrap; }
+    -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
     .account_wr .model .model_info .left {
-      display: flex;
-      justify-content: space-between;
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+      -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
       width: 100%; }
     .account_wr .model .model_info .right {
       margin-top: 10px; }

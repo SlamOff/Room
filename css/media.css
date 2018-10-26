@@ -19,6 +19,12 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .account_wr .purchase_page .for_scroll {
+    min-width: 1px;
+  }
+  .account_wr .purchase_page_view table tbody .price span {
+    font-size: 13px;
+  }
   body {
     font-size: 14px; }
   .sticky-slider-wrapper {
@@ -555,6 +561,10 @@
 	.dots-wrap .slick-dots li {
 		width: 105px;
 	}
+  .account_wr .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .contact_page .content {
     height: auto;
   }
@@ -937,6 +947,52 @@
   .single-news-content {
     padding-left: 15px!important;
     padding-right: 15px!important;
+  }
+  .account_wr .block_heading .hint_block {
+    max-width: 100%;
+  }
+  .account_wr .model .model_info .right,
+  .account_wr .model .model_info .left {
+    display: block;
+  }
+  .account_wr .model .model_info .right, .account_wr .model .model_info .left {
+    text-align: center;
+  }
+  .account_wr .download_model {
+    display: inline-block;
+  }
+  .account_wr .model .model_info .right .main_btn {
+    margin-left: 0;
+    display: inline-block;
+  }
+  .account_wr .notification_block {
+    font-size: 13px;
+  }
+  .account_wr .realization_block .realization_img .realization_text {
+    position: static;
+  }
+  .account_wr .realization_block .realization_img .realization_text .basket_block {
+    transform: none;
+    display: inline-block;
+  }
+  .account_wr .realization_block .realization_img .realization_text .main_btn {
+    transform: none;
+    display: inline-block;
+  }
+  .account_wr .realization_block .realization_img .realization_text .basket_block {
+    width: 100%;
+  }
+  .account_wr .realization_block .realization_img {
+    text-align: center;
+  }
+  .account_wr .purchase_page_view table thead th {
+    font-size: 10px;
+  }
+  .account_wr .account_container .account_two_col .account_left {
+    width: 100%;
+  }
+  .account_wr .scroll_block .for_scroll {
+    margin: 0;
   }
   .single-news .single-news-window {
     height: auto;

@@ -6974,7 +6974,10 @@ p {
   .section-registration .quick_reg_wr{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
     margin: 5px 0;
   }
 .section-registration .quick_reg_wr .text{
@@ -8406,10 +8409,11 @@ p {
   display: -ms-flexbox;
   display: flex;
   /*justify-content: space-between;*/
-  flex-wrap: wrap;
+  
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   padding-top: 30px;
 }

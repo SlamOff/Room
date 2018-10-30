@@ -8,7 +8,22 @@ $(document).ready(function() {
         var name = splitDot[0];
         $(this).find('img').attr("src","img/account_img/"+name+"_active.svg");
     });
-
+	if($(window).width() < 992){
+		// $('.account_wr .account_sidebar ul').on('click', function(){
+		// 	$(this).toggleClass('opened');
+		// });
+		$('body').on('click', function(e){
+			//console.log(e.target.parentElement);
+			if(e.target.parentElement.classList.contains('account_sidebar')){
+				$('.account_wr .account_sidebar ul').addClass('opened');
+				$('.account_wr .account_sidebar').addClass('opened');
+			}
+			else {
+				$('.account_wr .account_sidebar ul').removeClass('opened');
+				$('.account_wr .account_sidebar').removeClass('opened');
+			}
+		});
+	}
     /// floor select
     $('.floor').click(function(){
     	$(this).toggleClass('opened');

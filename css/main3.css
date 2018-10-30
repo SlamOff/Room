@@ -15,7 +15,23 @@
   .main_btn:hover {
     background: #efdddd;
     color: #502C5A; }
-
+.input_popup input {
+  width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #262038;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #262038;
+    padding: 0 15px;
+    margin: 20px 0 0;
+}
+.popup .thanks {
+  text-align: center;
+  padding: 25px 0;
+  display: none;
+}
 .btn_empty {
   background: #fff;
   border: 1px solid #505961;
@@ -2212,6 +2228,7 @@
     }
     .my_select.opened ul {
       display: block;
+      z-index: 2;
     }
     .my_select ul li {
       height: 30px;
@@ -3011,7 +3028,8 @@
         max-width: 150px;
         padding: 10px 0; }
   .account_wr .model .absolute_text {
-    width: 280px; }
+    width: 280px;
+    max-width: 100%; }
   .account_wr .sketch_temp .interior_features .title_flex {
     display: block; }
     .account_wr .sketch_temp .interior_features .title_flex .price_right {

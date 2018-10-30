@@ -132,6 +132,85 @@
   .contact_page .content {
     display: block;
   }
+  .account_wr .account_sidebar ul li .icon_wr {
+    margin-left: 9px;
+  }
+  .account_wr .account_sidebar {
+    left: 0;
+    top: 84px;
+    height: 100%;
+  }
+  .account_wr .account_sidebar .main_btn {
+    display: none;
+  }
+  .account_wr .account_sidebar {
+    background: none;
+    width: 46px;
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    transition: width .3s;
+  }
+  .account_wr .account_sidebar.opened {
+    width: 100%;
+  }
+  .account_wr .account_sidebar ul li {
+    width: 1000px;
+  }
+  .account_wr .account_sidebar.scrolled {
+    top: 0;
+  }
+  .account_wr .account_sidebar ul {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-right: 5px solid #262038;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    transition: width .3s;
+    background-color: #fff;
+    height: -webkit-calc(100% - 84px);
+    height: -moz-calc(100% - 84px);
+    height: -ms-calc(100% - 84px);
+    height: calc(100% - 84px);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+  }
+  .account_wr .account_sidebar.scrolled ul {
+    height: 100%;
+  }
+   .account_wr .account_sidebar ul.opened {
+    width: 100%;
+   }
+  .account_wr .account_sidebar ul:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 222;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .account_wr .account_sidebar ul.opened:after {
+    z-index: -1;
+  }
   .contacts form .input-wrapper .form-group {
     width: 100%;
   }
@@ -561,6 +640,9 @@
 	.dots-wrap .slick-dots li {
 		width: 105px;
 	}
+  .account_wr .purchase_page .for_scroll {
+    min-width: 650px;
+  }
   .account_wr .container {
     padding-left: 50px;
     padding-right: 50px;
